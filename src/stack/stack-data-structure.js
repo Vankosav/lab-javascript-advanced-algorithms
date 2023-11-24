@@ -5,11 +5,11 @@ class Stack {
   }
 
   canPush() {
-    if (this.stackControl.length === 0) {
+    if (this.stackControl.length < this.MAX_SIZE) {
       return true;
-    } else if (this.stackControl.length === this.MAX_SIZE){
+    } else {
     return false;
-  } //or  return this.stackControl.length < this.MAX_SIZE;
+  } 
   }; 
 
   isEmpty() {
